@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "@tanstack/react-router";
-import React from "react";
 
 const FooterComponent = () => {
   return (
@@ -26,7 +25,9 @@ const FooterComponent = () => {
             <div className="address mt-2 mb-1">
               <Link className="text-decoration-none">
                 <i className="fa-solid fa-location-dot"></i>
-                <p className="m-0">Jl. Poros No 123, Makassar, Sulawesi Selatan, Indonesia</p>
+                <p className="m-0">
+                  Jl. Poros No 123, Makassar, Sulawesi Selatan, Indonesia
+                </p>
               </Link>
             </div>
           </Col>

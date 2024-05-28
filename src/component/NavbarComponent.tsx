@@ -9,7 +9,6 @@ import {
   NavLink,
 } from "react-bootstrap";
 import { navLinks } from "../data/dataArray";
-import React from "react";
 
 const NavbarComponent = () => {
   const [changeColor, setChangColor] = useState(false);
