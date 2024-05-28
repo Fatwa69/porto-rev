@@ -1,8 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { createLazyFileRoute } from "@tanstack/react-router";
 import AboutImg from "../assets/img/about/about-1.jpg";
-import { motion} from "framer-motion";
-
+import { motion } from "framer-motion";
 
 export const Route = createLazyFileRoute("/about")({
   component: About,
@@ -37,12 +36,13 @@ function About() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ ease: "easeOut", duration: 0.5 }}
               >
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                debitis non numquam, enim incidunt impedit animi ullam,
-                cupiditate facere sit laborum officiis ipsam repellat excepturi
-                consequuntur aut, perferendis exercitationem dignissimos?
-              </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                  debitis non numquam, enim incidunt impedit animi ullam,
+                  cupiditate facere sit laborum officiis ipsam repellat
+                  excepturi consequuntur aut, perferendis exercitationem
+                  dignissimos?
+                </p>
               </motion.div>
             </Col>
             <Col>

@@ -1,8 +1,7 @@
 import { createLazyFileRoute, useNavigate } from "@tanstack/react-router";
 import { Container, Row, Col } from "react-bootstrap";
-import bgVid from "../video/background-vid.mp4";
-import "../dist/css/app.css";
-import "../dist/css/styles.css";
+import bgVid from "../assets/img/background-video.mp4";
+import "../main.css";
 import { produkTerbaru, dataSwiper } from "../data/dataArray";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
