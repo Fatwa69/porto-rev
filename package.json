@@ -1,5 +1,4 @@
 {
-  "homepage": "https://fatwa69.github.io/fatwa-porto/",
   "name": "skincare",
   "private": true,
   "version": "0.0.0",
@@ -15,6 +14,7 @@
   },
   "dependencies": {
     "@tanstack/react-router": "^1.33.2",
+    "@tanstack/router": "^0.0.1-beta.53",
     "@tanstack/router-cli": "^1.32.10",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.2.6",

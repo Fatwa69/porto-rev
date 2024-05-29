@@ -1,14 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { createLazyFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import AboutImg from "../assets/img/about/about-1.jpg";
 import { motion } from "framer-motion";
 
-export const Route = createLazyFileRoute("/about")({
-  component: About,
-});
-
-function About() {
-  return (
+export const Route = createFileRoute("/about")({
+  component: () => {
     <div className="about-page">
       <div className="about min-vh-100">
         <Container>
@@ -51,6 +47,6 @@ function About() {
           </Row>
         </Container>
       </div>
-    </div>
-  );
-}
+    </div>;
+  },
+});

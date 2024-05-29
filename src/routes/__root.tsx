@@ -6,12 +6,11 @@ export const Route = createRootRoute({
   component: () => (
     <>
       <div>
-        <Link to="/" className="[&.active]:font-bold"></Link>{" "}
+        <Link to="/home" className="[&.active]:font-bold"></Link>{" "}
         <Link to="/about" className="[&.active]:font-bold"></Link>{" "}
         <Link to="/produk" className="[&.active]:font-bold"></Link>{" "}
         <Link to="/testimonial" className="[&.active]:font-bold"></Link>
       </div>
-
       <NavbarComponent />
       <Outlet />
       <FooterComponent />
