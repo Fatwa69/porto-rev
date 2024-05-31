@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { createFileRoute } from "@tanstack/react-router";
-import AboutImg from "../assets/img/about/about-1.jpg";
+import AboutImg from "../../assets/img/about/about-1.jpg";
 import { motion } from "framer-motion";
 
 export const Route = createFileRoute("/about/")({
