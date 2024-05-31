@@ -1,10 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { createFileRoute } from "@tanstack/react-router";
-import { semuaProduk } from "../data/dataArray";
+import { semuaProduk } from "../../data/dataArray";
 import { motion } from "framer-motion";
 
-export const Route = createFileRoute("/produk")({
-  component: () => (
+export const Route = createFileRoute("/produk/")({
+  component: ProdukComponent,
+});
+
+function ProdukComponent() {
+  return (
     <div className="produk-page">
       <div className="produk min-vh-100">
         <Container>
@@ -64,5 +68,5 @@ export const Route = createFileRoute("/produk")({
         </Container>
       </div>
     </div>
-  ),
-});
+  );
+}

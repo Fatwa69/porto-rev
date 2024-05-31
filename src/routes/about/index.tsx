@@ -3,8 +3,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import AboutImg from "../assets/img/about/about-1.jpg";
 import { motion } from "framer-motion";
 
-export const Route = createFileRoute("/about")({
-  component: () => {
+export const Route = createFileRoute("/about/")({
+  component: AboutComponent,
+});
+
+function AboutComponent() {
+  return (
     <div className="about-page">
       <div className="about min-vh-100">
         <Container>
@@ -47,6 +51,6 @@ export const Route = createFileRoute("/about")({
           </Row>
         </Container>
       </div>
-    </div>;
-  },
-});
+    </div>
+  );
+}

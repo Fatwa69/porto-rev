@@ -11,9 +11,13 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 
-export const Route = createFileRoute("/home")({
-  component: () => {
+export const Route = createFileRoute("/")({
+  component: IndexComponent,
+});
+
+function IndexComponent() {
   let navigate = useNavigate();
+  return(
   <div className="homepage">
     <header className="w-100 min-vh-100 d-flex align-items-center pt-lg-5">
       <Container>
@@ -154,6 +158,6 @@ export const Route = createFileRoute("/home")({
         </Row>
       </Container>
     </div>
-  </div>;
-},
-});
+  </div>
+  )
+}

@@ -3,8 +3,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import bgImg from "../assets/img/office.jpg";
 import { motion } from "framer-motion";
 
-export const Route = createFileRoute("/kontak")({
-  component: () => (
+export const Route = createFileRoute("/kontak/")({
+  component: KontakComponent,
+});
+
+function KontakComponent() {
+  return (
     <div className="kontak-page">
       <div className="kontak min-vh-100">
         <Container>
@@ -45,5 +49,5 @@ export const Route = createFileRoute("/kontak")({
         </Container>
       </div>
     </div>
-  ),
-});
+  );
+}

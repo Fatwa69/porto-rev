@@ -1,10 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { testimonial } from "../data/dataArray";
+import { testimonial } from "../../data/dataArray";
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 
-export const Route = createFileRoute("/testimonial")({
-  component: () => (
+export const Route = createFileRoute("/testimonial/")({
+  component: TestimonialComponent,
+});
+
+function TestimonialComponent() {
+  return (
     <div className="testimonial-page">
       <div className="testimonial">
         <Container>
@@ -51,5 +55,5 @@ export const Route = createFileRoute("/testimonial")({
         </Container>
       </div>
     </div>
-  ),
-});
+  );
+}
